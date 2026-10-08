@@ -7,4 +7,4 @@
 - `output/`: Images and renders created.
 
 # Progress
-- [x] Began basic structure and added previous files I had. 
+- [x] Began basic structure and added previous files I had, also learned how to create ppm files, normalization and escalation. 
