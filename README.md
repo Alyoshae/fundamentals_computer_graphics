@@ -8,3 +8,4 @@
 
 # Progress
 - [x] Began basic structure and added previous files I had, also learned how to create ppm files, normalization and escalation. 
+- [x] Created rays in an orthographic view. 
