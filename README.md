@@ -10,3 +10,4 @@
 - [x] Began basic structure and added previous files I had, also learned how to create ppm files, normalization and escalation. 
 - [x] Created rays in an orthographic view. 
 - [x] first sphere using only discriminant. (i'll be breaking the code some more). 
+- [x] trying to make this code a little ligher. 

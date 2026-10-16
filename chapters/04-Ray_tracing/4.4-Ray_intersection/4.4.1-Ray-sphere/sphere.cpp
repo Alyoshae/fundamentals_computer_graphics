@@ -5,8 +5,8 @@
 
 int main() {
     //lienzo 
-    int columnas = 250;
-    int filas = 250;
+    int columnas = 1200;
+    int filas = 1200;
 
     //base ortonormal con origen en eye point(origen). 
     point3 origen = {0,0,0};
@@ -15,10 +15,10 @@ int main() {
     vec3 w = {0,0,-1};
 
     //limites de lienzo e interpolacion 
-    float left =  -1.0f;
-    float right = 1.f; 
-    float top = 1.f; 
-    float bottom = -1.0f; 
+    float left =  -2.0f;
+    float right = 2.f; 
+    float top = 2.f; 
+    float bottom = -2.0f; 
 
     //esfera 
     point3 centro_esfera = {0,0,-10};
@@ -29,13 +29,13 @@ int main() {
     std::cout << "P3\n" << columnas << ' ' << filas << "\n255\n";
 
     for(int i=0; i<filas; i++){
-        float porcentaje_g = float(filas -1-i)/(filas-1); 
-        int g = porcentaje_g*255;
+        // float porcentaje_g = float(filas -1-i)/(filas-1); 
+        // int g = porcentaje_g*255;
         //movimiento en v 
         float v_cordenada = bottom +(top-bottom)*(i+0.5)/filas;
         for(int j=0; j<columnas; j++){
-            float porcentaje_r = float(columnas-1-j)/(columnas-1);
-            int r = porcentaje_r*255;
+            // float porcentaje_r = float(columnas-1-j)/(columnas-1);
+            // int r = porcentaje_r*255;
             //movimiento en u
             float u_cordenada = left + (right-left)*(j+0.5)/columnas;
 
@@ -56,6 +56,7 @@ int main() {
             float c = dot(oc, oc) - (radio_esfera * radio_esfera);
             float discriminante = (b * b) - (a * c);
             //imprimir hohoho
+            //std::cout<<((discriminante) ? ("10 10 10\n"): ("300 300 300\n"));
             if(discriminante >= 0){
                 std::cout << "10 10 10\n";
             }

@@ -1,5 +1,5 @@
-#include "../../../core/include/ray.h"
-#include "../../../core/include/vec3.h"
+#include "../../../../core/include/ray.h"
+#include "../../../../core/include/vec3.h"
 #include<iostream> 
 
 
